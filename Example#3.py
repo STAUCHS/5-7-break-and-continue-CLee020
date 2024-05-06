@@ -4,12 +4,14 @@
 # Author:		  
 # Created:		06/05/2024
 #-------------------------------------------------------------------------
+while True:
 
-size = int(input("Enter the frame size (cm): "))
+  size = int(input("Enter the frame size (cm): "))
 
-if size > 60:
-  print("The bike is too big!!")
-elif size < 55:
-  print("The bike is too small!")
-else:
-  print("The bike is the correct size.")
+  if size > 60:
+    print("The bike is too big!!")
+  elif size < 55:
+    print("The bike is too small!")
+  else:
+    print("The bike is the correct size.")
+    break

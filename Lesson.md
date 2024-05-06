@@ -146,6 +146,9 @@ print('Loop is finished.')
 ```
 
 ```Answer goes here:
+5
+4
+3
 
 ```
 
@@ -163,6 +166,9 @@ print('Loop is finished.')
 ```
 
 ```Answer goes here:
+5
+4
+3
 
 ```
 
@@ -170,14 +176,17 @@ print('Loop is finished.')
 The following program will ask the user for the frame size of their bike and tell them if it's too big, too small, or the corrrect size. What can we do to have the program continuously prompt the user to enter a size until it's the correct size?
 
 ```python
-size = int(input("Enter the frame size (cm): "))
+while True:
 
-if size > 60:
-  print("The bike is too big!!")
-elif size < 55:
-  print("The bike is too small!")
-else:
-  print("The bike is the correct size.")
+  size = int(input("Enter the frame size (cm): "))
+
+  if size > 60:
+    print("The bike is too big!!")
+  elif size < 55:
+    print("The bike is too small!")
+  else:
+    print("The bike is the correct size.")
+    break
 ```
 
 >**Answer:**
